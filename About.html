@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tia Maria's</title>
+    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Caveat:wght@700&family=Dancing+Script:wght@700&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <body>
+        <div class="bg-home">
+            <nav class="header-container">
+                <div class="navbar">
+                    <div class="logo">  <h1 class="header-letter">TMSK</h1></div>
+                    <ul class="header-navbar">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Sining.html">Sining</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="About.html">About</a></li>
+                    </ul>
+                    <div class="toggle-btn">
+                        <i class="fa-solid fa-bars" style="color: black;"></i>
+                    </div>
+                </div>
+        
+            <div class="dropdown-menu">
+                <ul class="header-navbar">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Sining.html">Sining</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </div>
+            </nav>
+        
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const dropdownMenu = document.querySelector('.dropdown-menu')
+        
+            toggleBtn.onclick = function () {
+                dropdownMenu.classList.toggle('open')
+                const isOpen = dropdownMenu.classList.contains('open')
+        
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        
+        </script>
+<!---------------------ABOUT-MAIN--------------------->
+
+<div class="about-main">
+    <div class="photo">
+        <img src="imgw/about-door.jpg" alt="">
+    </div>
+
+    <div class="histo">
+        <br>
+        <h1>About</h1>
+        <br>
+        <div class="p"><p><b>"Tia Maria's Sining at Kultura</b> is a restaurant conceptualized in an old rich culture" says by the proprietorship,<b> Chef Maryrose Faraon - Barte</b>, an amazing cook who has both love for food and art.</p>
+        </div><br>
+        <div class="p"><p> Filipino and European cuisine are served here in the restaurant. Events are also hosted here; initially incidental, they are now regularly held here on special gatherings.</p></div><br>
+        <div class="p">Your mouth and eyes are fed by Tia Maria's amazing cuisine and gorgeous artwork. Filipino artisans created the artwork that surrounds the restaurant, which adds warmth and may possibly be for sale.</div><br>
+        <div class="p">The restaurant is located at San Pablo City Laguna, Chef Maryrose's beloved hometown. When asked about the reason of establishing a restaurant, Chef replied, "I quess it was influenced by my father 2nd Lt. Reynando Faraon, who loves iconic dishes from San Pablo." </div><br>
+    </div>
+</div>
+
+ <!---------------------FOOTER--------------------->
+
+ <footer class="footer">
+    <div class="container-footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Address</h4>
+                <ul>
+                    <li><a href="Contact.html#location-id">29 Marasigan St.,<br> Lakeside Park Subd, <br>  San Pablo City, Philippines</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Email</h4>
+                <ul>
+                    <li><a href="#">tiamarias1987@gmail.com</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact No.</h4>
+                <ul>
+                    <li><p href="#" >(049) 521 1810</p></li>
+                    <li><p>0917 142 1236</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://web.facebook.com/Tiamariassiningatkultura"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="webJS.js" >
+
+</script>
+
+</body>
+</html>

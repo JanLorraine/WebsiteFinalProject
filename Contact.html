@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tia Maria's</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Caveat:wght@700&family=Dancing+Script:wght@700&family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+<body>
+        <div class="bg-home">
+            <nav class="header-container">
+                <div class="navbar">
+                    <div class="logo">  <h1 class="header-letter">TMSK</h1></div>
+                    <ul class="header-navbar">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Sining.html">Sining</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="About.html">About</a></li>
+                    </ul>
+                    <div class="toggle-btn">
+                        <i class="fa-solid fa-bars" style="color: black;"></i>
+                    </div>
+                </div>
+        
+            <div class="dropdown-menu">
+                <ul class="header-navbar">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Sining.html">Sining</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="About.html">About</a></li>
+                </ul>
+            </div>
+            </nav>
+        
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const dropdownMenu = document.querySelector('.dropdown-menu')
+        
+            toggleBtn.onclick = function () {
+                dropdownMenu.classList.toggle('open')
+                const isOpen = dropdownMenu.classList.contains('open')
+        
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        
+        </script>
+        
+<!---------------------CONTACT FORM------------------->
+<div class="contact-page">
+<div class="form-contact">
+    <div class="contact-container">
+        <div class="contact">
+            <div class="contact-box">
+                <h1>Email</h1>
+                <h4>tiamarias1987@gmail.com</h4><br>
+            </div>    
+            <div class="contact-box">
+                <h1>Phone</h1>
+                    <h4>(049) 521 1810</h4>
+                    <h4>0917-142-1236</h4><br>
+            </div>
+            <div class="contact-box">   
+                <h1>Address</h1>
+                <h4>29 Marasigan St.,<br> Lakeside Park Subd, <br>  San Pablo City, Philippines</h4>
+            </div>
+        </div>
+        <hr>
+    <div class="form-container">
+        <div class="form-body">
+            <div class="form">
+                    <h1>Contact Us!</h1><br>
+                <form method="post">
+                    <input type="text" placeholder="Name" id="name" autocomplete="of">
+                    <input type="email" placeholder="Email" id="email" autocomplete="off">
+                    <input type="text" placeholder="Subject" id="subject" autocomplete="off">
+                    <textarea id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                    <button id="btn">Send</button>
+                </form>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><hr>
+    </div>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault()
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        var body = 'name: '+name + '<br/> email: ' + email + '<br/> subject: ' +subject + '<br/> message :' + message;
+
+        Email.send({
+    SecureToken : "639ca9dc-3ec2-4750-a255-0817ba5b1d78",
+    To : 'janlorrainel@gmail.com',
+    From : "tiamarias1987@gmail.com",
+    Subject : "Contact Message",
+    Body : body
+}).then(
+  message => alert(message)
+);
+
+})
+</script>
+
+<!---------------------LOCATION-------------------->
+<div class="location" >
+    <br>
+    <div class="loc-description">
+    <h1 class="loc" id="location-id">Map Directions</h1>
+    <br>
+   <a href=""> <i class="fa-solid fa-location-crosshairs" style="color: #f7f9fc;"></i></a>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.0284731591296!2d121.31961917511944!3d14.075495986350933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5ccf9ba61197%3A0x2e1dd2a66c093af6!2sTia%20Maria&#39;s%20Sining%20At%20Kultura!5e0!3m2!1sen!2sph!4v1686210594916!5m2!1sen!2sph" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+<br><br>
+</div>
+</div>
+<!---------------------FOOTER------------------->
+<footer class="footer">
+    <div class="container-footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Address</h4>
+                <ul>
+                    <li><a href="Contact.html#location-id">29 Marasigan St.,<br> Lakeside Park Subd, <br>  San Pablo City, Philippines</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Email</h4>
+                <ul>
+                    <li><a href="#">tiamarias1987@gmail.com</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact No.</h4>
+                <ul>
+                    <li><p href="#" >(049) 521 1810</p></li>
+                    <li><p>0917 142 1236</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://web.facebook.com/Tiamariassiningatkultura"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

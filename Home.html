@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tia Maria's</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Caveat:wght@700&family=Dancing+Script:wght@700&family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-home">
+    <nav class="header-container">
+        <div class="navbar">
+            <div class="logo">  <h1 class="header-letter">TMSK</h1></div>
+            <ul class="header-navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Sining.html">Sining</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars" style="color: black;"></i>
+            </div>
+        </div>
+
+    <div class="dropdown-menu">
+        <ul class="header-navbar">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Sining.html">Sining</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </div>
+    </nav>
+
+<script>
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const toggleBtnIcon = document.querySelector('.toggle-btn i')
+    const dropdownMenu = document.querySelector('.dropdown-menu')
+
+    toggleBtn.onclick = function () {
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+
+</script>
+
+    <div class="home-welcome">
+        <h1 class="welcome">Welcome</h1>
+        <h1 class="tia-maria">Tia Maria's</h1>
+        <h1 class="sining">Sining at Kultura</h1>
+        <h2 class="food-fusion">where great food and  great art meets</h2><br><br>
+        <a href="Menu.html"><button>Menu</button></a>
+ 
+    </div>
+</div>
+<!---------------------FOOTER--------------------->
+
+<footer class="footer">
+    <div class="container-footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Address</h4>
+                <ul>
+                    <li><a href="Contact.html#location-id">29 Marasigan St.,<br> Lakeside Park Subd, <br>  San Pablo City, Philippines</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Email</h4>
+                <ul>
+                    <li><a href="#">tiamarias1987@gmail.com</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact No.</h4>
+                <ul>
+                    <li><p href="#" >(049) 521 1810</p></li>
+                    <li><p>0917 142 1236</p></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://web.facebook.com/Tiamariassiningatkultura"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
